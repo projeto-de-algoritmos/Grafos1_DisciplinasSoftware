@@ -1,5 +1,5 @@
 
-# Buscador de disciplinas software
+# Buscador de disciplinas FGA
 
 **Número da Lista**: X<br>
 **Conteúdo da Disciplina**: XXXXXXXXXX<br>
