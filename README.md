@@ -11,7 +11,14 @@
 | 19/0124989  |  Amanda Fernandes custodio |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de Software da Universidade de Brasília, com intuito de facilitar a visualização das matérias em sua grade, mantendo organização e clareza em cada requisitos que cada matéria possui dentro do curso de Engenharia de Software.
+
+## Objetivos 
+
+**1:**Traçar rotas entres matérias, mostrando pré requisitos para cada um.
+**2:**Mostrar com clareza as matérias a serem concluídas e as que ainda não foram concluídas dentro do curso. 
+**3:**Mostrar matérias optativas e obrigatórias dentro da grade curricular.
+**4:**Demonstrar a sequência de matéria a ser realizada a partir de uma matéria finalizada.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
