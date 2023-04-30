@@ -10,7 +10,7 @@ class Grafo:
         if v2 not in self.graph:
             self.graph[v2] = []
         self.graph[v1].append(v2)
-        #self.graph[v2].append(v1)
+        #self.graph[v2].append(v1) -> para grafos não direcionados
     
     def printa_grafo(self):
         for v in self.graph:
@@ -22,23 +22,30 @@ class Grafo:
             else:
                 print(f"{v}: NULL \n")
     
+    def reverte(self):
+        grafo_reverso = Grafo()
+        for v in self.graph:
+            for adj in self.graph[v]:
+                grafo_reverso.cria_linha(adj, v)
+        return grafo_reverso
+
     def bfs(self, v_saida, v_chegada):
-        queue = deque()
-        visited = set()
+        fila = deque()
+        visitados = []
 
-        queue.append((v_saida, [v_saida]))
+        fila.append((v_saida, [v_saida]))
 
-        while queue:
-            node, path = queue.popleft()
+        while fila:
+            no, caminho = fila.popleft()
 
-            if node == v_chegada:
-                return path
+            if no == v_chegada:
+                return caminho
 
-            if node not in visited:
-                visited.add(node)
-                for adj in self.graph[node]:
-                    if adj not in visited:
-                        queue.append((adj, path + [adj]))
+            if no not in visitados:
+                visitados.append(no)
+                for adj in self.graph[no]:
+                    if adj not in visitados:
+                        fila.append((adj, caminho + [adj]))
 
         return None
 

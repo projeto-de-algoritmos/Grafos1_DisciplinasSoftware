@@ -13,5 +13,15 @@ grafo.graph = {'cálculo 1': ['Cálculo 2','Cálculo 3'],
 
 
 #grafo.printa_grafo()
-path = grafo.bfs('cálculo 1', 'Métodos Numéricos de engenharia')
-print(path)
+path = grafo.bfs('cálculo 1', 'Cálculo 3')
+
+if path == None:
+    print("Não existe caminho")
+else:
+    print(path)
+
+'''grafo2 = Grafo()
+grafo2 = grafo.reverte()
+grafo.printa_grafo()
+print('======================================')
+grafo2.printa_grafo()'''
