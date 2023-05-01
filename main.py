@@ -4,8 +4,8 @@ from grafos import Grafo
 grafo = Grafo()
 grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicada em Engenharia'],
                'Probabilidade e Estatística Aplicada em Engenharia':[],
-               'Cálculo 2': ['Métodos Numéricos de engenharia'],
-               'Métodos Numéricos de engenharia': [],
+               'Cálculo 2': ['Métodos Numéricos para engenharia'],
+               'Métodos Numéricos para engenharia': [],
                'Algoritmos e Programação de Computadores': ['Orientação a objetos', 'Desenvolvimento de Software','Estrutura de dados 1'],
                'Desenho Industrial Assistido por Computador':['Interação Humano computador'],
                'Engenharia e Ambiente':[],
@@ -63,12 +63,12 @@ root = tk.Tk()
 titulo = tk.Label(root, text="Bem vindo ao buscador de matéria", font=("Times New Roman", 20))
 titulo.pack()
 
-source_label = tk.Label(root, text="Digite a máteria de origem:", font=("Times New Roman", 14))
+source_label = tk.Label(root, text="Digite a máteria 1:", font=("Times New Roman", 14))
 source_label.pack()
 source_entry = tk.Entry(root)
 source_entry.pack()
 
-end_label = tk.Label(root, text="Digite com pré-requisitos:", font=("Times New Roman", 14))
+end_label = tk.Label(root, text="Digite a matéria 2", font=("Times New Roman", 14))
 end_label.pack()
 end_entry = tk.Entry(root)
 end_entry.pack()
@@ -77,12 +77,22 @@ def bfs():
     source = source_entry.get()
     end = end_entry.get()
     path = grafo.bfs(source, end)
-    Caminho_label = tk.Label(root, text=f"Caminho: {path}")
-    Caminho_label.pack()
+    if path == None:
+        janela = tk.Toplevel(root)
+        janela.geometry("100x50")
+        Caminho_label = tk.Label(janela, text=f"Caminho não existente")
+        Caminho_label.pack()
+    else:
+        janela = tk.Toplevel(root)
+        janela.geometry("500x50")
+        caminho = " -> ".join(path)
+        Caminho_label = tk.Label(janela, text=f"Caminho: {caminho}")
+        Caminho_label.pack()
+        
 
+bfs_button = tk.Button(root, text="Mostrar caminho de 1 para 2", command=bfs )
 
-bfs_button = tk.Button(root, text="Executar BFS", command=bfs)
-
+root.geometry("400x200+200+200")
 
 bfs_button.pack()
 root.mainloop()
