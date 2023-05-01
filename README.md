@@ -17,7 +17,6 @@ Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de So
 
 -  Traçar rotas entres matérias, mostrando pré requisitos para cada um.<br>
 -  Mostrar com clareza as matérias a serem concluídas e as que ainda não foram concluídas dentro do curso. <br>
--  Mostrar matérias optativas e obrigatórias dentro da grade curricular.<br>
 -  Demonstrar a sequência de matéria a ser realizada a partir de uma matéria finalizada.<br>
 
 ## Screenshots
