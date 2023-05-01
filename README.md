@@ -17,23 +17,19 @@ Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de So
 
 -  Traçar rotas entres matérias, mostrando pré requisitos para cada um.<br>
 -  Mostrar com clareza as matérias a serem concluídas e as que ainda não foram concluídas dentro do curso. <br>
--  Mostrar matérias optativas e obrigatórias dentro da grade curricular.<br>
 -  Demonstrar a sequência de matéria a ser realizada a partir de uma matéria finalizada.<br>
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+<p align="center">
+ <img src= assets/BuscadorMaterias.jpg alt="Buscador de disciplinas FGA"/>  <br> <br>
+ <img src= assets/ListaMaterias.jpg alt="Buscador de disciplinas FGA"/>  <br> <br>
+ <img src= assets/CaminhoNaoExiste.jpeg alt="Buscador de disciplinas FGA"/>  <br> <br> <br>
+</p>
 
 ## Instalação 
 **Linguagem**: Python 3<br>
 
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+É necessária a instalação da linguagem python 3 em sua máquina para que o projeto funcione perfeitamente, assim como uma IDE de sua preferência (VS Code é o melhor recomendado).
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Essa aplicação tem como principal objetivo mostrar os pré-requisitos para a matéria solicitada como disciplina específica(discuplina 1) e assim, através de uma Busca em largura, vai adicionando todos os pré-requisistos em uma fila, logo após visitar todos os pré requisitos, retorna uma lista de todas as matérias que precisam ser finalizadas até a disciplina seguinte.(disciplina 2)
