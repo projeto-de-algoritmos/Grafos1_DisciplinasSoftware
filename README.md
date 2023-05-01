@@ -21,7 +21,11 @@ Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de So
 -  Demonstrar a sequência de matéria a ser realizada a partir de uma matéria finalizada.<br>
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+<p align="center">
+ <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/BuscadorMaterias.jpg alt="Buscador de disciplinas FGA"/> 
+ <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/CaminhoNaoExiste.jpeg alt="Buscador de disciplinas FGA"/>
+ <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/ListaMaterias.jpg alt="Buscador de disciplinas FGA"/>
+</p>
 
 ## Instalação 
 **Linguagem**: Python 3<br>
@@ -29,4 +33,4 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 É necessária a instalação da linguagem python 3 em sua máquina para que o projeto funcione perfeitamente.
 
 ## Uso 
-Essa apliação tem como principal objetivo mostrar os pré-requisitos para a matéria solicitada como disciplina específica(discuplina 1) e assim, através de uma Busca em largura, vai adicionando todos os pré-requisistos em uma fila, logo após visitar todos os pré requisitos, retorna uma lista de todas as matérias que precisam ser finalizadas até a disciplina seguinte.(disciplina 2)
+Essa aplicação tem como principal objetivo mostrar os pré-requisitos para a matéria solicitada como disciplina específica(discuplina 1) e assim, através de uma Busca em largura, vai adicionando todos os pré-requisistos em uma fila, logo após visitar todos os pré requisitos, retorna uma lista de todas as matérias que precisam ser finalizadas até a disciplina seguinte.(disciplina 2)
