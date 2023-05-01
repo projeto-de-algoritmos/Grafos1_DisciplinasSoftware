@@ -29,7 +29,7 @@ Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de So
 ## Instalação 
 **Linguagem**: Python 3<br>
 
-É necessária a instalação da linguagem python 3 em sua máquina para que o projeto funcione perfeitamente.
+É necessária a instalação da linguagem python 3 em sua máquina para que o projeto funcione perfeitamente, assim como uma IDE de sua preferência (VS Code é o melhor recomendado).
 
 ## Uso 
 Essa aplicação tem como principal objetivo mostrar os pré-requisitos para a matéria solicitada como disciplina específica(discuplina 1) e assim, através de uma Busca em largura, vai adicionando todos os pré-requisistos em uma fila, logo após visitar todos os pré requisitos, retorna uma lista de todas as matérias que precisam ser finalizadas até a disciplina seguinte.(disciplina 2)
