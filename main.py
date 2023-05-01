@@ -1,4 +1,5 @@
 import tkinter as tk
+
 from grafos import Grafo
 
 grafo = Grafo()
@@ -60,18 +61,28 @@ grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicad
 #grafo.printa_grafo()
 
 root = tk.Tk()
-titulo = tk.Label(root, text="Bem vindo ao buscador de matéria", font=("Times New Roman", 20))
+root.title("Buscador de disciplinas de software")
+titulo = tk.Label(root, text="Bem vindo ao buscador de matérias de Engenharia de Software", font=("Times New Roman", 20))
 titulo.pack()
 
-source_label = tk.Label(root, text="Digite a máteria 1:", font=("Times New Roman", 14))
+
+texto = "\n\nEste programa foi desenvolvido em Python e utiliza o algoritmo BFS (Busca em Largura) em um grafo de disciplinas do curso de Engenharia de Software. Cada disciplina é um vértice e as conexões entre as disciplinas são arestas. O objetivo é encontrar todos os pré-requisitos de uma disciplina especificada. O algoritmo BFS percorre o grafo em largura, visitando todos os vértices de mesma profundidade antes de ir para o próximo nível. Ele começa pela disciplina especificada (disciplina 1), adiciona todos os seus pré-requisitos à fila e visita todos os pré-requisitos adicionados à fila, adicionando os pré-requisitos desses pré-requisitos à fila e assim por diante. Esse processo continua até que todos os pré-requisitos tenham sido visitados. O resultado é a lista de todas as disciplinas que devem ser cursadas antes da disciplina especificada (Disciplina 2).\n\n"
+
+texto_label = tk.Label(root, text=texto,justify="center", wraplength=600, font=("Times New Roman", 14))
+texto_label.pack()
+
+source_label = tk.Label(root, text="Digite a disciplina 1:", font=("Times New Roman", 14))
 source_label.pack()
 source_entry = tk.Entry(root)
 source_entry.pack()
 
-end_label = tk.Label(root, text="Digite a matéria 2", font=("Times New Roman", 14))
+end_label = tk.Label(root, text="\nDigite a disciplina 2:", font=("Times New Roman", 14))
 end_label.pack()
 end_entry = tk.Entry(root)
 end_entry.pack()
+
+espaco = tk.Label(root, text="\n")
+espaco.pack()
 
 def bfs():
     source = source_entry.get()
@@ -92,7 +103,7 @@ def bfs():
 
 bfs_button = tk.Button(root, text="Mostrar caminho de 1 para 2", command=bfs )
 
-root.geometry("400x200+200+200")
+root.geometry("900x600")
 
 bfs_button.pack()
 root.mainloop()
