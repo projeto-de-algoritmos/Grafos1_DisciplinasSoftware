@@ -7,8 +7,9 @@ grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicad
                'Probabilidade e Estatística Aplicada em Engenharia':[],
                'Cálculo 2': ['Métodos Numéricos para engenharia'],
                'Métodos Numéricos para engenharia': [],
-               'Algoritmos e Programação de Computadores': ['Orientação a objetos', 'Desenvolvimento de Software','Estrutura de dados 1'],
+               'Algoritmos e Programação de Computadores': ['Orientação a Objetos', 'Desenvolvimento de Software','Estrutura de Dados 1'],
                'Desenho Industrial Assistido por Computador':['Interação Humano computador'],
+               'Desenvolvimento de Software':[],
                'Engenharia e Ambiente':[],
                'Introdução a Engenharia':[],
                'Física 1':[],
@@ -33,7 +34,7 @@ grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicad
                'Compiladores 1':['Paradigmas de Programação'],
                'Estrutura de Dados 2':['Programação para Sistemas Paralelos e Distribuídos'],
                'Qualidade de Software':[],
-               'Testes de Software':['Técnicas de Programação em Plantaformas Emergentes','Gerência de Configuração e Evolução de Software'],
+               'Testes de Software':['Técnicas de Programação em Plataformas Emergentes','Gerência de Configuração e Evolução de Software'],
                'Arquitetura de Desenho de Software':['Paradigmas de Programação'],
                'Fundamentos de Redes de Computadores':['Programação para Sistemas Paralelos e Distribuídos'],
                'Sistemas de Banco de Dados 2':[],
@@ -54,6 +55,7 @@ grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicad
                'Trabalho de Conclusão de Curso 1':['Trabalho de Conclusão de Curso 2'],
                'Optativa':[],
                'Optativa':[],
+               'Projeto Integrador 2':[],
                }
 
 
@@ -95,7 +97,7 @@ def bfs():
         Caminho_label.pack()
     else:
         janela = tk.Toplevel(root)
-        janela.geometry("500x50")
+        janela.geometry("900x50")
         caminho = " -> ".join(path)
         Caminho_label = tk.Label(janela, text=f"Caminho: {caminho}")
         Caminho_label.pack()
