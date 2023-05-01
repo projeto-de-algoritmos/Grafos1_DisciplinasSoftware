@@ -22,9 +22,9 @@ Este trabalho tem como objetivo traçar disciplinas do curso de Engenharia de So
 
 ## Screenshots
 <p align="center">
- <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/BuscadorMaterias.jpg alt="Buscador de disciplinas FGA"/> 
- <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/CaminhoNaoExiste.jpeg alt="Buscador de disciplinas FGA"/>
- <img src= projeto-de-algoritmos/Grafos1_DisciplinasSoftware/assets/ListaMaterias.jpg alt="Buscador de disciplinas FGA"/>
+ <img src= assets/BuscadorMaterias.jpg alt="Buscador de disciplinas FGA"/>  <br> <br>
+ <img src= assets/ListaMaterias.jpg alt="Buscador de disciplinas FGA"/>  <br> <br>
+ <img src= assets/CaminhoNaoExiste.jpeg alt="Buscador de disciplinas FGA"/>  <br> <br> <br>
 </p>
 
 ## Instalação 
