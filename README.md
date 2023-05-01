@@ -26,14 +26,7 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 ## Instalação 
 **Linguagem**: Python 3<br>
 
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+É necessária a instalação da linguagem python 3 em sua máquina para que o projeto funcione perfeitamente.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Essa apliação tem como principal objetivo mostrar os pré-requisitos para a matéria solicitada como disciplina específica(discuplina 1) e assim, através de uma Busca em largura, vai adicionando todos os pré-requisistos em uma fila, logo após visitar todos os pré requisitos, retorna uma lista de todas as matérias que precisam ser finalizadas até a disciplina seguinte.(disciplina 2)
