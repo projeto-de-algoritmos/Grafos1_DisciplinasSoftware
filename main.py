@@ -1,8 +1,8 @@
+import tkinter as tk
 from grafos import Grafo
 
 grafo = Grafo()
-grafo.graph = {'cálculo 1': ['Cálculo 2','Cálculo 3','Probabilidade e Estatística Aplicada em Engenharia'],
-               'Cálculo 3':[],
+grafo.graph = {'Cálculo 1': ['Cálculo 2','Probabilidade e Estatística Aplicada em Engenharia'],
                'Probabilidade e Estatística Aplicada em Engenharia':[],
                'Cálculo 2': ['Métodos Numéricos de engenharia'],
                'Métodos Numéricos de engenharia': [],
@@ -36,7 +36,7 @@ grafo.graph = {'cálculo 1': ['Cálculo 2','Cálculo 3','Probabilidade e Estatí
                'Arquitetura de Desenho de Software':['Paradigmas de Programação'],
                'Fundamentos de Redes de Computadores':['Programação para Sistemas Paralelos e Distribuídos'],
                'Sistemas de Banco de Dados 2':[],
-               'Projeto de Análise de Algoritmos'[],
+               'Projeto de Análise de Algoritmos':[],
                'Técnicas de Programação em Plataformas Emergentes':['Engenharia de Produto de Software'],
                'Paradigmas de Programação':[],
                'Fundamentos de Sistemas Embarcados':[],
@@ -58,15 +58,32 @@ grafo.graph = {'cálculo 1': ['Cálculo 2','Cálculo 3','Probabilidade e Estatí
 
 
 #grafo.printa_grafo()
-path = grafo.bfs('cálculo 1', 'Cálculo 3')
 
-if path == None:
-    print("Não existe caminho")
-else:
-    print(path)
+root = tk.Tk()
+titulo = tk.Label(root, text="Bem vindo ao buscador de matéria", font=("Times New Roman", 20))
+titulo.pack()
 
-'''grafo2 = Grafo()
-grafo2 = grafo.reverte()
-grafo.printa_grafo()
-print('======================================')
-grafo2.printa_grafo()'''
+source_label = tk.Label(root, text="Digite a máteria de origem:", font=("Times New Roman", 14))
+source_label.pack()
+source_entry = tk.Entry(root)
+source_entry.pack()
+
+end_label = tk.Label(root, text="Digite com pré-requisitos:", font=("Times New Roman", 14))
+end_label.pack()
+end_entry = tk.Entry(root)
+end_entry.pack()
+
+def bfs():
+    source = source_entry.get()
+    end = end_entry.get()
+    path = grafo.bfs(source, end)
+    Caminho_label = tk.Label(root, text=f"Caminho: {path}")
+    Caminho_label.pack()
+
+
+bfs_button = tk.Button(root, text="Executar BFS", command=bfs)
+
+
+bfs_button.pack()
+root.mainloop()
+
